@@ -1,0 +1,237 @@
+<html>
+
+<head><title>Neurologist</title>
+  <style>
+    
+.header a{
+    font-size: 1.0rem;
+    color: var(--light-color);
+    margin-left: 90rem;
+}
+
+.header  a:hover{
+    color:rgb(111, 103, 103);
+}
+    .places-text {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.places-text small {
+  font-family: Roboto;
+  color: #ffc342;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.places-text h2 {
+  font-family: Barlow Condensed;
+  font-size: 55px;
+  color: #191d34;
+  letter-spacing: 1px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 80%;
+  height: auto;
+}
+
+.card img {
+  max-width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cards .text {
+  padding: 20px;
+  font-family: Barlow Condensed;
+  line-height: 50px;
+}
+
+.cards .card-box {
+  display: flex;
+  flex-flow: row;
+ 
+  font-size: 18px;
+  font-family: Roboto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cards .time {
+  flex: 1;
+}
+
+.cards .location {
+  flex: 2;
+}
+
+.cards .cost {
+  color: #f65d0b;
+  font-size: 20px;
+}
+    .zoom-img {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.zoom-img .img-card {
+  position: absolute;
+  overflow: hidden;
+}
+
+.img-card img {
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.card:hover .zoom-img img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+ .cn{
+        width: 160px;
+        height: 40px;
+        background: #ff7200;
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .4s ease;
+    
+    }
+    
+     .cn a{
+        text-decoration: none;
+        color: #000;
+        transition: .3s ease;
+    }
+    
+    .cn:hover{
+        background-color: #fff;
+    }
+
+  </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="docter.html">Back</a>
+    </header>
+  <section class="places">
+    <div class="places-text">
+      <h2>Best Neurologist </h2>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="zoom-img">
+          <div class="img-card">
+            <img src="doc1.jpeg">
+          </div>
+        </div>
+
+        <div class="text">
+          <span class="rating">Dr. Ahmed</span>
+          <h2>M.B.B.S expert in Neurologist</h2>
+          <p class="cost">20 years of exp</p>
+          <div class="card-box">
+            <button class="cn"><a href="appointment.php">Schedule</a></button>
+          </div>
+        </div>
+
+      </div>
+      <div class="card">
+        <div class="zoom-img">
+          <div class="img-card">
+            <img src="doc4.jpg">
+          </div>
+        </div>
+
+        <div class="text">
+            <span class="rating">Dr. Williams</span>
+            <h2>M.B.B.S expert in Neurologist</h2>
+            <p class="cost">22 years of exp</p>
+            <div class="card-box">
+              <button class="cn"><a href="appointment.php">Schedule</a></button>
+            </div>
+          </div>
+
+      </div>
+      <div class="card">
+        <div class="zoom-img">
+          <div class="img-card">
+            <img src="doc2.jpeg">
+          </div>
+        </div>
+
+        <div class="text">
+            <span class="rating">Dr. Jones</span>
+            <h2>M.B.B.S expert in Neurologist</h2>
+            <p class="cost">25 years of exp</p>
+            <div class="card-box">
+              <button class="cn"><a href="appointment.php">Schedule</a></button>
+            </div>
+          </div>
+
+      </div>
+      <div class="card">
+        <div class="zoom-img">
+          <div class="img-card">
+            <img src="docf4.jpg">
+          </div>
+        </div>
+
+        <div class="text">
+            <span class="rating">Dr. Nikitha </span>
+            <h2>M.B.B.S expert in Neurologist</h2>
+            <p class="cost">20 years of exp</p>
+            <div class="card-box">
+              <button class="cn"><a href="appointment.php">Schedule</a></button>
+            </div>
+          </div>
+
+      </div>
+      <div class="card">
+        <div class="zoom-img">
+          <div class="img-card">
+            <img src="docf2.jpg">
+          </div>
+        </div>
+
+        <div class="text">
+            <span class="rating">Dr. Anna</span>
+            <h2>M.B.B.S expert in Neurologist</h2>
+            <p class="cost">29 years of exp</p>
+            <div class="card-box">
+              <button class="cn"><a href="appointment.php">Schedule</a></button>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

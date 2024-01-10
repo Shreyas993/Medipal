@@ -1,0 +1,21 @@
+
+body{
+    padding:50px;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(205, 200, 200, 0.5)50%,rgba(184, 178, 178, 0.5)50%), url(out.jpeg);
+    background-position: absolute;
+    background-size: cover;
+    height: 100vh;
+}
+.container{
+    max-width: 600px;
+    margin:0 auto;
+    padding:50px;
+    box-shadow: rgba(16, 16, 17, 0.2) 0px 7px 29px 0px;
+}
+.form-group{
+    margin-bottom:50px;
+}
